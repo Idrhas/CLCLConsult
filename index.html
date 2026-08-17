@@ -3,728 +3,381 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Creative Minds Learning Consultancy | Transforming Education Through Creativity</title>
-  <meta name="description" content="Creative Minds Learning Consultancy (CMLC) empowers educators and learners through creative teaching strategies, resource-based learning, and innovative educational practices." />
+  <title>Creative Learning Consultancy Limited (CLCL) | Transforming Education in Nigeria</title>
+  <meta name="description" content="Creative Learning Consultancy Limited (CLCL) empowers teachers and students across Nigeria through creative, student-centred teaching strategies and innovative educational programs. Branches in Zaria (Kaduna) and Abuja." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body data-page="home">
 
-  <!-- ── NAVBAR ── -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#home" class="nav-logo" id="nav-logo-link">
-        <div class="logo-icon">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="18" cy="18" r="18" fill="url(#logoGrad)"/>
-            <path d="M18 8 L26 14 L26 22 L18 28 L10 22 L10 14 Z" fill="none" stroke="white" stroke-width="1.5"/>
-            <circle cx="18" cy="18" r="4" fill="white"/>
-            <path d="M18 14 L18 10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M22 16 L25.5 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M22 20 L25.5 23" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M18 22 L18 26" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M14 20 L10.5 23" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M14 16 L10.5 13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-            <defs>
-              <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FF6B35"/>
-                <stop offset="1" stop-color="#F7C59F"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="logo-text">
-          <span class="logo-main">CMLC</span>
-          <span class="logo-sub">Creative Minds</span>
-        </div>
-      </a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#programs" class="nav-link">Programs</a></li>
-        <li><a href="#outcomes" class="nav-link">Outcomes</a></li>
-        <li><a href="#contact" class="nav-link nav-cta">Get Started</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <div id="navbar-container"></div>
 
-  <!-- ── HERO ── -->
-  <section class="hero" id="home">
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-      <div class="shape shape-4"></div>
-    </div>
-    <div class="hero-container">
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image:url('images/hero.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
       <div class="hero-content">
-        <div class="hero-badge" id="hero-badge">
-          <span class="badge-dot"></span>
-          Transforming Education Since Day One
+        <div class="hero-tag">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Nigeria's Creative Education Consultancy
         </div>
-        <h1 class="hero-title">
-          Igniting <em>Creative Minds</em>,<br/>Shaping Brilliant <span class="highlight">Futures</span>
-        </h1>
-        <p class="hero-subtitle">
-          Empowering educators and learners through creativity-driven, student-centered approaches that spark curiosity, innovation, and a lifelong love of learning.
-        </p>
+        <h1>Transforming Teaching.<br/><span>Inspiring Learners.</span><br/>Building Futures.</h1>
+        <p>Creative Learning Consultancy Limited (CLCL) equips educators with innovative, student-centred strategies that spark curiosity, creativity, and a lifelong love of learning — from Zaria to Abuja.</p>
         <div class="hero-actions">
-          <a href="#services" class="btn btn-primary" id="hero-cta-primary">Explore Our Services</a>
-          <a href="#contact" class="btn btn-secondary" id="hero-cta-secondary">
-            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
-            Talk To Us
-          </a>
+          <a href="services.html" class="btn btn-primary btn-lg">Explore Our Services</a>
+          <a href="contact.html" class="btn btn-outline-white btn-lg">Get In Touch</a>
         </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number">5+</span>
-            <span class="stat-label">Core Services</span>
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <div class="hero-badge-icon">✓</div>
+            <span>Practical & Affordable</span>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-number">3</span>
-            <span class="stat-label">Growth Phases</span>
+          <div class="hero-badge">
+            <div class="hero-badge-icon">📍</div>
+            <span>2 Branches — Zaria & Abuja</span>
           </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-number">∞</span>
-            <span class="stat-label">Student Potential</span>
+          <div class="hero-badge">
+            <div class="hero-badge-icon">🎓</div>
+            <span>Primary, Secondary & NGOs</span>
           </div>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="hero-img-wrapper">
-          <img src="hero.jpg" alt="Students and teachers collaborating creatively" class="hero-img" id="hero-illustration" />
-          <div class="hero-card card-1">
-            <span class="card-icon">💡</span>
-            <span>Innovative Teaching</span>
-          </div>
-          <div class="hero-card card-2">
-            <span class="card-icon">🚀</span>
-            <span>Student Growth</span>
-          </div>
-          <div class="hero-card card-3">
-            <span class="card-icon">🎨</span>
-            <span>Creative Learning</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <div class="scroll-dot"></div>
     </div>
   </section>
 
-  <!-- ── MARQUEE ── -->
-  <div class="marquee-strip" aria-hidden="true">
-    <div class="marquee-track">
-      <span>Creative Teaching</span><span class="sep">✦</span>
-      <span>Critical Thinking</span><span class="sep">✦</span>
-      <span>Problem Solving</span><span class="sep">✦</span>
-      <span>Student-Centered Learning</span><span class="sep">✦</span>
-      <span>Innovation</span><span class="sep">✦</span>
-      <span>Collaboration</span><span class="sep">✦</span>
-      <span>Project-Based Learning</span><span class="sep">✦</span>
-      <span>Teacher Empowerment</span><span class="sep">✦</span>
-      <span>Creative Teaching</span><span class="sep">✦</span>
-      <span>Critical Thinking</span><span class="sep">✦</span>
-      <span>Problem Solving</span><span class="sep">✦</span>
-      <span>Student-Centered Learning</span><span class="sep">✦</span>
-      <span>Innovation</span><span class="sep">✦</span>
-      <span>Collaboration</span><span class="sep">✦</span>
-      <span>Project-Based Learning</span><span class="sep">✦</span>
-      <span>Teacher Empowerment</span><span class="sep">✦</span>
+  <!-- ══════════════ STATS BAR ══════════════ -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stat-item reveal delay-1">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Active Branches</span>
+      </div>
+      <div class="stat-item reveal delay-2">
+        <span class="stat-number">5</span>
+        <span class="stat-label">Core Services</span>
+      </div>
+      <div class="stat-item reveal delay-3">
+        <span class="stat-number">8</span>
+        <span class="stat-label">Key Objectives</span>
+      </div>
+      <div class="stat-item reveal delay-4">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Learner-Centred</span>
+      </div>
     </div>
   </div>
 
-  <!-- ── ABOUT ── -->
-  <section class="about section" id="about">
+  <!-- ══════════════ ABOUT SNAPSHOT ══════════════ -->
+  <section class="section about-snapshot">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Who We Are</span>
-        <h2 class="section-title">Bridging the Gap Between <br/><span class="gradient-text">Tradition & Innovation</span></h2>
+      <div class="about-snapshot-img reveal-left">
+        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=1000&q=82&fit=crop" alt="Teacher engaging with students in a classroom" loading="lazy" />
+        <div class="img-badge">
+          <strong>CLCL</strong>
+          Founded with Purpose
+        </div>
       </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p class="about-lead">
-            Creative Minds Learning Consultancy (CMLC) is an educational consultancy service designed to transform teaching and learning through creativity-driven and student-centered approaches.
-          </p>
-          <p>
-            We provide training, workshops, curriculum support, classroom innovation strategies, and practical learning resources that help teachers create engaging, fun, and meaningful learning experiences. Our work equips educators with tools to inspire curiosity, creativity, innovation, and independent thinking among students.
-          </p>
-          <div class="vm-cards">
-            <div class="vm-card vision" id="vision-card">
-              <div class="vm-icon">
-                <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-              </div>
-              <h3>Our Vision</h3>
-              <p>To become a leading educational consultancy that transforms learning through creativity, innovation, and student-centered teaching practices.</p>
-            </div>
-            <div class="vm-card mission" id="mission-card">
-              <div class="vm-icon">
-                <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-              </div>
-              <h3>Our Mission</h3>
-              <p>To empower educators and learners through creative teaching strategies, resource-based learning, and innovative educational practices that develop critical thinkers and effective problem-solvers.</p>
-            </div>
+      <div class="about-snapshot-text reveal-right">
+        <div class="section-header">
+          <span class="section-label">Who We Are</span>
+          <h2 class="section-title">Creative Learning Consultancy <span>Limited</span></h2>
+          <p class="section-desc">We are an educational consultancy dedicated to transforming teaching and learning through creativity-driven, student-centred approaches across Nigerian schools and communities.</p>
+        </div>
+        <p>Many classrooms today still rely on rote memorisation and passive learning. CLCL bridges the gap between traditional teaching practices and modern creative learning strategies — equipping educators with practical tools to inspire their students.</p>
+        <div class="checkmarks">
+          <div class="checkmark-item">
+            <div class="check-icon">✓</div>
+            Teacher training and professional development
+          </div>
+          <div class="checkmark-item">
+            <div class="check-icon">✓</div>
+            Student creativity and innovation programs
+          </div>
+          <div class="checkmark-item">
+            <div class="check-icon">✓</div>
+            Curriculum and resource development
+          </div>
+          <div class="checkmark-item">
+            <div class="check-icon">✓</div>
+            School improvement consultation
           </div>
         </div>
-        <div class="about-objectives">
-          <h3 class="objectives-title">Our Objectives</h3>
-          <ul class="objectives-list" id="objectives-list">
-            <li><span class="obj-num">01</span><span>Train teachers on creative and innovative teaching methodologies</span></li>
-            <li><span class="obj-num">02</span><span>Promote critical thinking and problem-solving skills among students</span></li>
-            <li><span class="obj-num">03</span><span>Help schools create engaging and enjoyable learning environments</span></li>
-            <li><span class="obj-num">04</span><span>Support educators in utilizing available resources effectively</span></li>
-            <li><span class="obj-num">05</span><span>Encourage learner-centered instructional practices</span></li>
-            <li><span class="obj-num">06</span><span>Develop practical programs that improve student achievement</span></li>
-            <li><span class="obj-num">07</span><span>Integrate creativity, collaboration, and innovation into classrooms</span></li>
-            <li><span class="obj-num">08</span><span>Provide educational support for schools, teachers, and parents</span></li>
-          </ul>
-        </div>
+        <a href="about.html" class="btn btn-primary">Learn More About Us</a>
       </div>
     </div>
   </section>
 
-  <!-- ── SERVICES ── -->
-  <section class="services section" id="services">
-    <div class="services-bg"></div>
+  <!-- ══════════════ SERVICES ══════════════ -->
+  <section class="section bg-offwhite">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">What We Offer</span>
-        <h2 class="section-title">Core Services Designed to <br/><span class="gradient-text">Transform Education</span></h2>
-        <p class="section-desc">Comprehensive educational support that touches every dimension of teaching and learning.</p>
+      <div class="section-header centered reveal">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title">Our Core <span>Services</span></h2>
+        <p class="section-desc">Comprehensive educational support designed to transform every dimension of teaching and learning.</p>
       </div>
-      <div class="services-grid" id="services-grid">
-
-        <div class="service-card featured" id="service-training">
-          <div class="service-icon-wrap">
-            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+      <div class="services-grid">
+        <div class="service-card reveal delay-1">
+          <div class="service-icon">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
           </div>
-          <div class="service-tag">Most Popular</div>
           <h3>Teacher Training & Professional Development</h3>
-          <p>Workshops, seminars, and training programs that transform how educators teach.</p>
-          <ul class="service-list">
-            <li>Creative teaching strategies</li>
-            <li>Inquiry-based learning</li>
-            <li>Project-based learning</li>
-            <li>Critical thinking development</li>
-            <li>Educational technology integration</li>
-            <li>Resource improvisation & utilization</li>
-          </ul>
-          <a href="#contact" class="service-link">Learn More →</a>
+          <p>Workshops and seminars on creative teaching, inquiry-based learning, project-based approaches, and educational technology integration.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
         </div>
-
-        <div class="service-card" id="service-curriculum">
-          <div class="service-icon-wrap">
-            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <div class="service-card reveal delay-2">
+          <div class="service-icon">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
           </div>
           <h3>Curriculum & Learning Support</h3>
-          <p>Enhancing curricula with interactive learning activities and creative assessment methods.</p>
-          <ul class="service-list">
-            <li>Curriculum enhancement</li>
-            <li>Lesson planning support</li>
-            <li>Interactive learning activities</li>
-            <li>Creative assessment methods</li>
-            <li>Learning materials design</li>
-          </ul>
-          <a href="#contact" class="service-link">Learn More →</a>
+          <p>Curriculum enhancement, lesson planning, development of interactive learning activities, and creative assessment design.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
         </div>
-
-        <div class="service-card" id="service-student">
-          <div class="service-icon-wrap">
-            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        <div class="service-card reveal delay-3">
+          <div class="service-icon">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
           </div>
           <h3>Student Creativity & Innovation Programs</h3>
-          <p>Programs that develop leadership, teamwork, and entrepreneurial skills in students.</p>
-          <ul class="service-list">
-            <li>Creativity clubs</li>
-            <li>Innovation challenges</li>
-            <li>Debate & problem-solving competitions</li>
-            <li>STEM & arts integration</li>
-            <li>Hands-on learning workshops</li>
-          </ul>
-          <a href="#contact" class="service-link">Learn More →</a>
+          <p>Creativity clubs, innovation challenges, debate competitions, STEM and arts integration, and hands-on learning workshops.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
         </div>
-
-        <div class="service-card" id="service-resources">
-          <div class="service-icon-wrap">
-            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+        <div class="service-card reveal delay-2">
+          <div class="service-icon">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
           </div>
           <h3>Educational Resource Development</h3>
-          <p>Creating rich, practical materials that make learning more engaging and accessible.</p>
-          <ul class="service-list">
-            <li>Interactive learning materials</li>
-            <li>Activity-based teaching guides</li>
-            <li>Creative classroom resource kits</li>
-            <li>Digital learning resources</li>
-            <li>Teacher support manuals</li>
-          </ul>
-          <a href="#contact" class="service-link">Learn More →</a>
+          <p>Interactive learning materials, activity-based teaching guides, creative classroom resource kits, and digital learning tools.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
         </div>
-
-        <div class="service-card" id="service-school">
-          <div class="service-icon-wrap">
-            <svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+        <div class="service-card reveal delay-3">
+          <div class="service-icon">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
           </div>
           <h3>School Improvement Consultation</h3>
-          <p>Partnering with schools to build innovative learning cultures and environments.</p>
-          <ul class="service-list">
-            <li>Improving teaching quality</li>
-            <li>Enhancing classroom environments</li>
-            <li>Increasing student engagement</li>
-            <li>Building innovative school culture</li>
-            <li>Designing effective learning spaces</li>
-          </ul>
-          <a href="#contact" class="service-link">Learn More →</a>
+          <p>Partnering with schools to improve teaching quality, classroom environments, student engagement, and school culture.</p>
+          <a href="services.html" class="service-link">Learn More →</a>
         </div>
-
+      </div>
+      <div style="text-align:center;margin-top:40px;" class="reveal">
+        <a href="services.html" class="btn btn-secondary">View All Services</a>
       </div>
     </div>
   </section>
 
-  <!-- ── APPROACH ── -->
-  <section class="approach section" id="programs">
+  <!-- ══════════════ PROGRAMS CTA BANNER ══════════════ -->
+  <section class="cta-banner">
+    <div class="cta-banner-bg" style="background-image:url('https://images.unsplash.com/photo-1577896851231-70ef18881754?w=1400&q=80&fit=crop')"></div>
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">How We Work</span>
-        <h2 class="section-title">A Practical, <span class="gradient-text">Participatory Approach</span></h2>
-        <p class="section-desc">We believe learning is most powerful when it's active, collaborative, and connected to real life.</p>
-      </div>
-      <div class="approach-grid" id="approach-grid">
-        <div class="approach-item" id="approach-experiential">
-          <div class="approach-icon">🔬</div>
-          <h4>Experiential Learning</h4>
-          <p>Hands-on activities and real-world tasks that make abstract concepts concrete and memorable.</p>
-        </div>
-        <div class="approach-item" id="approach-collaborative">
-          <div class="approach-icon">🤝</div>
-          <h4>Collaborative Learning</h4>
-          <p>Group-based strategies that build teamwork, communication, and shared problem-solving skills.</p>
-        </div>
-        <div class="approach-item" id="approach-inquiry">
-          <div class="approach-icon">🔍</div>
-          <h4>Inquiry & Discovery</h4>
-          <p>Encouraging students to ask questions, investigate, and draw their own evidence-based conclusions.</p>
-        </div>
-        <div class="approach-item" id="approach-play">
-          <div class="approach-icon">🎮</div>
-          <h4>Play-Based Learning</h4>
-          <p>Activity-based methods that make learning enjoyable and deeply engaging for all ages.</p>
-        </div>
-        <div class="approach-item" id="approach-tech">
-          <div class="approach-icon">💻</div>
-          <h4>Technology-Enhanced</h4>
-          <p>Integrating digital tools and resources to expand learning beyond the four walls of a classroom.</p>
-        </div>
-        <div class="approach-item" id="approach-community">
-          <div class="approach-icon">🌍</div>
-          <h4>Community-Based</h4>
-          <p>Using locally available materials and community resources to make learning affordable and relevant.</p>
+      <div class="reveal">
+        <span class="section-label" style="color:var(--orange)">Student Programs</span>
+        <h2>Unlocking Every Student's Creative Potential</h2>
+        <p>Our student programs develop leadership, innovation, communication, and entrepreneurial skills through hands-on, engaging learning experiences.</p>
+        <div class="cta-banner-actions">
+          <a href="programs.html" class="btn btn-white btn-lg">Explore Programs</a>
+          <a href="contact.html" class="btn btn-outline-white btn-lg">Partner With Us</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── TARGET AUDIENCE ── -->
-  <section class="audience section" id="audience">
+  <!-- ══════════════ WHY CLCL ══════════════ -->
+  <section class="section">
     <div class="container">
-      <div class="audience-inner">
-        <div class="section-header left-align">
-          <span class="section-tag">Who We Serve</span>
-          <h2 class="section-title">Built for Every <span class="gradient-text">Educational Stakeholder</span></h2>
-          <p class="section-desc">Our services reach the full ecosystem of education — from students to system leaders.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;">
+        <div class="reveal-left">
+          <div class="section-header">
+            <span class="section-label">Why Choose Us</span>
+            <h2 class="section-title">What Sets CLCL <span>Apart</span></h2>
+            <p class="section-desc">We combine deep educational expertise with practical, affordable solutions that work within the realities of Nigerian schools.</p>
+          </div>
+          <div class="why-grid">
+            <div class="why-item">
+              <div class="why-icon-wrap">💡</div>
+              <div>
+                <h4>Practical & Affordable</h4>
+                <p>Real solutions that work within school budgets, using locally available resources.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon-wrap">🎯</div>
+              <div>
+                <h4>Creativity at the Core</h4>
+                <p>Every program is infused with creativity-first thinking and student-centred design.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon-wrap">👩‍🏫</div>
+              <div>
+                <h4>Teacher Empowerment</h4>
+                <p>We build lasting capacity in educators, not just one-off training sessions.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon-wrap">🌍</div>
+              <div>
+                <h4>Local Context, Global Standards</h4>
+                <p>Community-based learning that meets international educational benchmarks.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon-wrap">🤝</div>
+              <div>
+                <h4>Customised Support</h4>
+                <p>Tailored consultancy for each school's unique needs, culture, and goals.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon-wrap">📈</div>
+              <div>
+                <h4>Measurable Impact</h4>
+                <p>Programs designed with clear, trackable outcomes for teachers and students.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="audience-cards" id="audience-cards">
-          <div class="audience-card" id="aud-primary">
-            <span class="aud-icon">🏫</span>
-            <h4>Primary Schools</h4>
-            <p>Foundational creative learning experiences for young learners.</p>
-          </div>
-          <div class="audience-card" id="aud-secondary">
-            <span class="aud-icon">📚</span>
-            <h4>Secondary Schools</h4>
-            <p>Advanced innovation programs for adolescent students.</p>
-          </div>
-          <div class="audience-card" id="aud-teachers">
-            <span class="aud-icon">👩‍🏫</span>
-            <h4>Teachers & Administrators</h4>
-            <p>Professional development for the educators shaping tomorrow.</p>
-          </div>
-          <div class="audience-card" id="aud-parents">
-            <span class="aud-icon">👨‍👩‍👧</span>
-            <h4>Parents & Caregivers</h4>
-            <p>Support and guidance to extend creative learning at home.</p>
-          </div>
-          <div class="audience-card" id="aud-ngos">
-            <span class="aud-icon">🌐</span>
-            <h4>Educational NGOs</h4>
-            <p>Partnership for large-scale educational transformation programs.</p>
-          </div>
-          <div class="audience-card" id="aud-institutions">
-            <span class="aud-icon">🎓</span>
-            <h4>Educational Institutions</h4>
-            <p>Comprehensive school improvement and culture-building support.</p>
+        <div class="reveal-right" style="position:relative;">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=900&q=82&fit=crop" alt="Teacher professional development workshop" loading="lazy" style="width:100%;border-radius:10px;box-shadow:0 8px 40px rgba(0,0,0,0.14);" />
+          <div style="position:absolute;top:24px;right:-16px;background:var(--orange);color:white;padding:20px 24px;border-radius:8px;box-shadow:0 4px 20px rgba(245,166,35,0.4);font-weight:700;font-size:0.9rem;max-width:180px;line-height:1.5;">
+            "Our teachers leave workshops transformed and ready to inspire."
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── OUTCOMES ── -->
-  <section class="outcomes section" id="outcomes">
-    <div class="outcomes-bg"></div>
+  <!-- ══════════════ OUR BRANCHES ══════════════ -->
+  <section class="section bg-offwhite">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Expected Impact</span>
-        <h2 class="section-title">Measurable <span class="gradient-text">Outcomes & Results</span></h2>
-        <p class="section-desc">Every engagement with CMLC is designed to drive meaningful, lasting change.</p>
+      <div class="section-header centered reveal">
+        <span class="section-label">Our Locations</span>
+        <h2 class="section-title">Two Branches, <span>One Mission</span></h2>
+        <p class="section-desc">CLCL operates from two strategic locations across Nigeria, bringing quality educational consultancy closer to the schools that need it most.</p>
       </div>
-      <div class="outcomes-grid" id="outcomes-grid">
-        <div class="outcome-item" id="outcome-1">
-          <div class="outcome-icon">📈</div>
-          <h4>Improved Teaching Effectiveness</h4>
-          <p>Educators leave our programs with practical strategies they can immediately apply in their classrooms.</p>
-        </div>
-        <div class="outcome-item" id="outcome-2">
-          <div class="outcome-icon">🎯</div>
-          <h4>Increased Student Engagement</h4>
-          <p>Students become active participants — motivated, curious, and eager to learn.</p>
-        </div>
-        <div class="outcome-item" id="outcome-3">
-          <div class="outcome-icon">✨</div>
-          <h4>Enhanced Creativity & Innovation</h4>
-          <p>Classrooms transform into incubators of ideas where creativity is celebrated.</p>
-        </div>
-        <div class="outcome-item" id="outcome-4">
-          <div class="outcome-icon">🧠</div>
-          <h4>Better Critical Thinking</h4>
-          <p>Students develop the analytical skills needed to solve complex real-world problems.</p>
-        </div>
-        <div class="outcome-item" id="outcome-5">
-          <div class="outcome-icon">💪</div>
-          <h4>Teacher Confidence & Capacity</h4>
-          <p>Educators gain the skills and confidence to adapt to any classroom challenge.</p>
-        </div>
-        <div class="outcome-item" id="outcome-6">
-          <div class="outcome-icon">🌟</div>
-          <h4>Meaningful Learning Experiences</h4>
-          <p>Learning becomes enjoyable, relevant, and connected to students' real lives.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── WHY CMLC ── -->
-  <section class="why section" id="why">
-    <div class="container">
-      <div class="why-inner">
-        <div class="why-content">
-          <span class="section-tag">Why Choose Us</span>
-          <h2 class="section-title">Our Competitive <span class="gradient-text">Advantage</span></h2>
-          <div class="why-list" id="why-list">
-            <div class="why-item" id="why-1">
-              <div class="why-check">✓</div>
-              <div>
-                <h4>Practical & Affordable Solutions</h4>
-                <p>We design interventions that work within real-world school constraints and budgets.</p>
+      <div class="branches-grid">
+        <div class="branch-card reveal delay-1">
+          <div class="branch-img">
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=82&fit=crop" alt="Zaria Kaduna classroom" loading="lazy" />
+          </div>
+          <div class="branch-body">
+            <span class="branch-tag">Branch 1</span>
+            <h3>Zaria, Kaduna Branch</h3>
+            <div class="branch-details">
+              <div class="branch-detail">
+                <span class="branch-detail-icon">📍</span>
+                <span>Zaria, Kaduna State, Nigeria</span>
+              </div>
+              <div class="branch-detail">
+                <span class="branch-detail-icon">📞</span>
+                <a href="tel:+2347080000076">+234 708 000 0076</a>
+              </div>
+              <div class="branch-detail">
+                <span class="branch-detail-icon">✉</span>
+                <a href="mailto:ruqayyahbabatunnde@gmail.com">ruqayyahbabatunnde@gmail.com</a>
+              </div>
+              <div class="branch-detail">
+                <span class="branch-detail-icon">🏫</span>
+                <span>Serving Kaduna State schools and surrounding communities</span>
               </div>
             </div>
-            <div class="why-item" id="why-2">
-              <div class="why-check">✓</div>
-              <div>
-                <h4>Creativity & Innovation at Core</h4>
-                <p>Every program, workshop, and resource is infused with creativity-first thinking.</p>
-              </div>
-            </div>
-            <div class="why-item" id="why-3">
-              <div class="why-check">✓</div>
-              <div>
-                <h4>Learner-Centered Education</h4>
-                <p>We put students at the heart of every educational decision and intervention.</p>
-              </div>
-            </div>
-            <div class="why-item" id="why-4">
-              <div class="why-check">✓</div>
-              <div>
-                <h4>Local Resources, Global Standards</h4>
-                <p>Maximizing locally available materials to deliver world-class learning experiences.</p>
-              </div>
-            </div>
-            <div class="why-item" id="why-5">
-              <div class="why-check">✓</div>
-              <div>
-                <h4>Fun Meets Meaningful Learning</h4>
-                <p>Our unique blend of play and purpose makes education truly transformative.</p>
-              </div>
-            </div>
-            <div class="why-item" id="why-6">
-              <div class="why-check">✓</div>
-              <div>
-                <h4>Customized School Support</h4>
-                <p>No two schools are the same — we tailor our approach to each institution's unique needs.</p>
-              </div>
+            <div style="margin-top:20px;">
+              <a href="contact.html" class="btn btn-secondary btn-sm">Contact This Branch</a>
             </div>
           </div>
         </div>
-        <div class="why-visual" id="why-visual">
-          <div class="why-big-number">6</div>
-          <p class="why-big-label">Key Competitive<br/>Advantages</p>
-          <div class="why-rings">
-            <div class="ring ring-1"></div>
-            <div class="ring ring-2"></div>
-            <div class="ring ring-3"></div>
+        <div class="branch-card reveal delay-2">
+          <div class="branch-img">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=82&fit=crop" alt="Abuja classroom" loading="lazy" />
+          </div>
+          <div class="branch-body">
+            <span class="branch-tag">Branch 2</span>
+            <h3>Abuja Branch</h3>
+            <div class="branch-details">
+              <div class="branch-detail">
+                <span class="branch-detail-icon">📍</span>
+                <span>Abuja, Federal Capital Territory, Nigeria</span>
+              </div>
+              <div class="branch-detail">
+                <span class="branch-detail-icon">📞</span>
+                <a href="tel:+13062002499">+1 306 200 2499</a>
+              </div>
+              <div class="branch-detail">
+                <span class="branch-detail-icon">✉</span>
+                <a href="mailto:ruqayyahbabatunnde@gmail.com">ruqayyahbabatunnde@gmail.com</a>
+              </div>
+              <div class="branch-detail">
+                <span class="branch-detail-icon">🏫</span>
+                <span>Serving FCT schools, NGOs, and educational organisations</span>
+              </div>
+            </div>
+            <div style="margin-top:20px;">
+              <a href="contact.html" class="btn btn-secondary btn-sm">Contact This Branch</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── IMPLEMENTATION PLAN ── -->
-  <section class="phases section" id="phases">
+  <!-- ══════════════ TESTIMONIALS ══════════════ -->
+  <section class="testimonial-strip">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Our Roadmap</span>
-        <h2 class="section-title">Implementation <span class="gradient-text">Phases</span></h2>
-        <p class="section-desc">A structured, phased approach to building a sustainable educational consultancy.</p>
+      <div class="section-header centered reveal" style="margin-bottom:48px;">
+        <span class="section-label" style="color:var(--orange)">What Educators Say</span>
+        <h2 class="section-title" style="color:white;">Voices From Our <span>Learning Community</span></h2>
       </div>
-      <div class="phases-timeline" id="phases-timeline">
-        <div class="phase" id="phase-1">
-          <div class="phase-marker">
-            <span class="phase-num">01</span>
-          </div>
-          <div class="phase-content">
-            <div class="phase-tag">Phase 1</div>
-            <h3>Planning & Development</h3>
-            <ul>
-              <li>Register the consultancy</li>
-              <li>Develop training materials and programs</li>
-              <li>Create branding and marketing materials</li>
-            </ul>
+      <div class="testimonial-track">
+        <div class="testimonial-card reveal delay-1">
+          <p class="testimonial-quote">The CLCL teacher training workshop completely changed how I approach my lessons. My students are now more engaged and excited to learn every day.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <span class="testimonial-name">Aisha Mohammed</span>
+              <span class="testimonial-title">Primary School Teacher, Zaria</span>
+            </div>
           </div>
         </div>
-        <div class="phase" id="phase-2">
-          <div class="phase-marker">
-            <span class="phase-num">02</span>
-          </div>
-          <div class="phase-content">
-            <div class="phase-tag">Phase 2</div>
-            <h3>Pilot Programs</h3>
-            <ul>
-              <li>Conduct teacher workshops</li>
-              <li>Partner with selected schools</li>
-              <li>Gather feedback and improve services</li>
-            </ul>
+        <div class="testimonial-card reveal delay-2">
+          <p class="testimonial-quote">CLCL helped us redesign our school's approach to learning. The consultancy was practical, empathetic, and deeply rooted in what actually works in Nigerian classrooms.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">E</div>
+            <div>
+              <span class="testimonial-name">Emmanuel Okeke</span>
+              <span class="testimonial-title">School Principal, Abuja</span>
+            </div>
           </div>
         </div>
-        <div class="phase" id="phase-3">
-          <div class="phase-marker">
-            <span class="phase-num">03</span>
-          </div>
-          <div class="phase-content">
-            <div class="phase-tag">Phase 3</div>
-            <h3>Expansion</h3>
-            <ul>
-              <li>Introduce online training programs</li>
-              <li>Expand partnerships</li>
-              <li>Develop educational products and learning resources</li>
-            </ul>
+        <div class="testimonial-card reveal delay-3">
+          <p class="testimonial-quote">The student creativity program gave my children confidence they never had before. They now lead discussions, solve problems, and dream bigger. Truly transformative.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">F</div>
+            <div>
+              <span class="testimonial-name">Fatima Aliyu</span>
+              <span class="testimonial-title">Parent, Kaduna</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── CONTACT ── -->
-  <section class="contact section" id="contact">
-    <div class="contact-bg-shapes">
-      <div class="cshape cshape-1"></div>
-      <div class="cshape cshape-2"></div>
-    </div>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Get In Touch</span>
-        <h2 class="section-title">Ready to <span class="gradient-text">Transform Learning?</span></h2>
-        <p class="section-desc">Reach out to us today and let's discuss how CMLC can support your school, teachers, and students.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info" id="contact-info">
-          <div class="founder-card" id="founder-card">
-            <div class="founder-avatar">
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="32" cy="32" r="32" fill="url(#avatarGrad)"/>
-                <circle cx="32" cy="26" r="10" fill="white" fill-opacity="0.9"/>
-                <ellipse cx="32" cy="50" rx="16" ry="10" fill="white" fill-opacity="0.9"/>
-                <defs>
-                  <linearGradient id="avatarGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#FF6B35"/>
-                    <stop offset="1" stop-color="#20B2AA"/>
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            <div class="founder-info">
-              <span class="founder-role">Founder & Director</span>
-              <h3 class="founder-name">Rukayat Babatunde Yusuf</h3>
-              <span class="founder-org">Creative Minds Learning Consultancy</span>
-            </div>
-          </div>
-          <div class="contact-details" id="contact-details">
-            <a href="mailto:ruqayyahbabatunnde@gmail.com" class="contact-item" id="contact-email">
-              <div class="contact-item-icon">
-                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-              </div>
-              <div>
-                <span class="contact-label">Email</span>
-                <span class="contact-value">ruqayyahbabatunnde@gmail.com</span>
-              </div>
-            </a>
-            <a href="tel:+13062002499" class="contact-item" id="contact-phone-1">
-              <div class="contact-item-icon">
-                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              </div>
-              <div>
-                <span class="contact-label">Phone (International)</span>
-                <span class="contact-value">+1 306 200 2499</span>
-              </div>
-            </a>
-            <a href="tel:+2347080000076" class="contact-item" id="contact-phone-2">
-              <div class="contact-item-icon">
-                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              </div>
-              <div>
-                <span class="contact-label">Phone (Nigeria)</span>
-                <span class="contact-value">+234 708 000 0076</span>
-              </div>
-            </a>
-            <a href="https://linkedin.com/in/babatunde-ruqayyah" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-linkedin">
-              <div class="contact-item-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-              </div>
-              <div>
-                <span class="contact-label">LinkedIn</span>
-                <span class="contact-value">linkedin.com/in/babatunde-ruqayyah</span>
-              </div>
-            </a>
-          </div>
+  <!-- ══════════════ FINAL CTA ══════════════ -->
+  <section class="section" style="background:var(--navy-light);">
+    <div class="container" style="text-align:center;">
+      <div class="reveal">
+        <span class="section-label">Ready to Transform Your School?</span>
+        <h2 class="section-title">Let's Build Better Learning <span>Together</span></h2>
+        <p class="section-desc" style="margin:0 auto 32px;">Whether you are a school, teacher, parent, or NGO — CLCL has the expertise and passion to support your educational goals.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary btn-lg">Get Started Today</a>
+          <a href="about.html" class="btn btn-secondary btn-lg">Learn About Us</a>
         </div>
-        <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
-          <h3>Send Us a Message</h3>
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required />
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required />
-            </div>
-            <div class="form-group">
-              <label for="role">Your Role</label>
-              <select id="role" name="role">
-                <option value="">Select your role</option>
-                <option value="teacher">Teacher</option>
-                <option value="principal">School Principal</option>
-                <option value="admin">School Administrator</option>
-                <option value="parent">Parent/Caregiver</option>
-                <option value="ngo">NGO Representative</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="service">Service of Interest</label>
-            <select id="service" name="service">
-              <option value="">Select a service</option>
-              <option value="training">Teacher Training & Professional Development</option>
-              <option value="curriculum">Curriculum & Learning Support</option>
-              <option value="student-programs">Student Creativity & Innovation Programs</option>
-              <option value="resources">Educational Resource Development</option>
-              <option value="school">School Improvement Consultation</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tell us about your school and what you're looking for..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
-            <span class="btn-text">Send Message</span>
-            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
-          </button>
-          <div class="form-success" id="form-success">
-            <span>🎉</span> Thank you! We'll be in touch very soon.
-          </div>
-        </form>
       </div>
     </div>
   </section>
 
-  <!-- ── FOOTER ── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="18" cy="18" r="18" fill="url(#footerLogoGrad)"/>
-              <path d="M18 8 L26 14 L26 22 L18 28 L10 22 L10 14 Z" fill="none" stroke="white" stroke-width="1.5"/>
-              <circle cx="18" cy="18" r="4" fill="white"/>
-              <defs><linearGradient id="footerLogoGrad" x1="0" y1="0" x2="36" y2="36"><stop stop-color="#FF6B35"/><stop offset="1" stop-color="#20B2AA"/></linearGradient></defs>
-            </svg>
-            <span>CMLC</span>
-          </div>
-          <p>Creative Minds Learning Consultancy — Transforming education through creativity, innovation, and student-centered teaching.</p>
-          <div class="footer-social">
-            <a href="https://linkedin.com/in/babatunde-ruqayyah" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link" id="footer-linkedin">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-            </a>
-            <a href="mailto:ruqayyahbabatunnde@gmail.com" aria-label="Email" class="social-link" id="footer-email">
-              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="footer-links-col">
-          <h5>Services</h5>
-          <ul>
-            <li><a href="#services">Teacher Training</a></li>
-            <li><a href="#services">Curriculum Support</a></li>
-            <li><a href="#services">Student Programs</a></li>
-            <li><a href="#services">Resource Development</a></li>
-            <li><a href="#services">School Consultation</a></li>
-          </ul>
-        </div>
-        <div class="footer-links-col">
-          <h5>Company</h5>
-          <ul>
-            <li><a href="#about">About CMLC</a></li>
-            <li><a href="#about">Vision & Mission</a></li>
-            <li><a href="#programs">Our Approach</a></li>
-            <li><a href="#phases">Roadmap</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-links-col">
-          <h5>Contact</h5>
-          <ul>
-            <li><a href="mailto:ruqayyahbabatunnde@gmail.com">ruqayyahbabatunnde@gmail.com</a></li>
-            <li><a href="tel:+13062002499">+1 306 200 2499</a></li>
-            <li><a href="tel:+2347080000076">+234 708 000 0076</a></li>
-            <li><a href="https://linkedin.com/in/babatunde-ruqayyah" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 Creative Minds Learning Consultancy (CMLC). All rights reserved.</p>
-        <p>Designed with ❤️ for educators everywhere.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <div id="footer-container"></div>
+  <script src="shared.js"></script>
 </body>
 </html>

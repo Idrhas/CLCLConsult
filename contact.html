@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Creative Learning Consultancy Limited (CLCL)</title>
+  <meta name="description" content="Get in touch with Creative Learning Consultancy Limited (CLCL). Contact our branches in Zaria (Kaduna) and Abuja, Nigeria." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="contact">
+
+  <div id="navbar-container"></div>
+
+  <!-- ══ PAGE BANNER ══ -->
+  <div class="page-banner">
+    <div class="page-banner-bg" style="background-image:url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=1400&q=80&fit=crop')"></div>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Contact</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ══ CONTACT SECTION ══ -->
+  <section class="section bg-offwhite">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Let's Work <span>Together</span></h2>
+        <p class="section-desc">Reach out to discuss how CLCL can support your school's educational goals. You can contact either of our branches directly or use the form below.</p>
+      </div>
+
+      <div class="contact-layout">
+        
+        <!-- Branches Column -->
+        <div class="contact-branch-cards reveal-left">
+          
+          <div class="contact-branch">
+            <div class="contact-branch-header">
+              <div class="contact-branch-pin">📍</div>
+              <div>
+                <h3>Zaria, Kaduna Branch</h3>
+                <span>Main Office</span>
+              </div>
+            </div>
+            <div class="contact-detail-row">
+              <span class="contact-detail-icon">📍</span>
+              <span>Zaria, Kaduna State, Nigeria</span>
+            </div>
+            <div class="contact-detail-row">
+              <span class="contact-detail-icon">📞</span>
+              <a href="tel:+2347080000076">+234 708 000 0076</a>
+            </div>
+            <div class="contact-detail-row">
+              <span class="contact-detail-icon">✉</span>
+              <a href="mailto:ruqayyahbabatunnde@gmail.com">ruqayyahbabatunnde@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-branch">
+            <div class="contact-branch-header">
+              <div class="contact-branch-pin">📍</div>
+              <div>
+                <h3>Abuja Branch</h3>
+                <span>FCT Office</span>
+              </div>
+            </div>
+            <div class="contact-detail-row">
+              <span class="contact-detail-icon">📍</span>
+              <span>Abuja, Federal Capital Territory, Nigeria</span>
+            </div>
+            <div class="contact-detail-row">
+              <span class="contact-detail-icon">📞</span>
+              <a href="tel:+13062002499">+1 306 200 2499</a>
+            </div>
+            <div class="contact-detail-row">
+              <span class="contact-detail-icon">✉</span>
+              <a href="mailto:ruqayyahbabatunnde@gmail.com">ruqayyahbabatunnde@gmail.com</a>
+            </div>
+          </div>
+
+          <div style="margin-top:16px;">
+            <p style="font-size:0.9rem;color:var(--text-mid);line-height:1.6;margin-bottom:12px;"><strong>Connect with our Founder:</strong></p>
+            <div style="display:flex;gap:12px;">
+              <a href="https://linkedin.com/in/babatunde-ruqayyah" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" style="background:white;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn Profile
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-wrap reveal-right">
+          <h3>Send Us a Message</h3>
+          <p>Fill out the form below and a member of our team will get back to you shortly.</p>
+          
+          <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" required placeholder="Enter your full name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" required placeholder="Enter your email" />
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject / Enquiry Type *</label>
+                <select id="subject" required>
+                  <option value="" disabled selected>Select an option...</option>
+                  <option value="training">Teacher Training Enquiry</option>
+                  <option value="programs">Student Programs</option>
+                  <option value="curriculum">Curriculum Support</option>
+                  <option value="consultation">School Consultation</option>
+                  <option value="other">Other Enquiry</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" required placeholder="How can we help you?"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+            <div id="form-success" class="form-success">
+              ✓ Message sent successfully! We will contact you soon.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ MAP / IMAGE BANNER ══ -->
+  <section style="height:400px;background:var(--navy);overflow:hidden;position:relative;">
+    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&q=80&fit=crop" alt="School building exterior" loading="lazy" style="width:100%;height:100%;object-fit:cover;opacity:0.4;" />
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;">
+      <h2 style="color:white;font-family:var(--font-heading);font-size:2.5rem;margin-bottom:16px;">We Look Forward to Partnering With You</h2>
+      <p style="color:rgba(255,255,255,0.8);max-width:500px;margin-bottom:24px;">Transforming education starts with a single conversation.</p>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+  <script src="shared.js"></script>
+</body>
+</html>

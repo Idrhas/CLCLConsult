@@ -14,7 +14,7 @@ const IMG = {
   school:     'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&q=82&fit=crop',
   hijab1:     'https://images.unsplash.com/photo-1588072432836-e10032774350?w=900&q=82&fit=crop',
   hijab2:     'https://images.unsplash.com/photo-1532012197267-da84d127e765?w=900&q=82&fit=crop',
-  programs:   'https://images.unsplash.com/photo-1577896851231-70ef18881754?w=1200&q=82&fit=crop',
+  programs:   'https://images.unsplash.com/photo-1544215881-8693d2621c17?w=1200&q=82&fit=crop', // Nigeria/African context
   branch:     'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&q=82&fit=crop',
 };
 
@@ -33,9 +33,9 @@ const NAVBAR_HTML = `
         Abuja: +1 306 200 2499
       </a>
       <span class="tb-divider">|</span>
-      <a href="mailto:ruqayyahbabatunnde@gmail.com">
+      <a href="mailto:info@clclconsult.com">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        ruqayyahbabatunnde@gmail.com
+        info@clclconsult.com
       </a>
     </div>
     <div class="top-bar-social">
@@ -104,7 +104,7 @@ const FOOTER_HTML = `
           <a href="https://linkedin.com/in/babatunde-ruqayyah" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
-          <a href="mailto:ruqayyahbabatunnde@gmail.com" class="footer-social-link" aria-label="Email">
+          <a href="mailto:info@clclconsult.com" class="footer-social-link" aria-label="Email">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </a>
         </div>
@@ -155,7 +155,7 @@ const FOOTER_HTML = `
         </div>
         <div class="footer-contact-item" style="margin-top:8px">
           <span class="footer-contact-icon">✉</span>
-          <span class="footer-contact-text"><a href="mailto:ruqayyahbabatunnde@gmail.com">ruqayyahbabatunnde@gmail.com</a></span>
+          <span class="footer-contact-text"><a href="mailto:info@clclconsult.com">info@clclconsult.com</a></span>
         </div>
       </div>
     </div>
